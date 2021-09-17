@@ -11,7 +11,7 @@ const forecast = (lat, lon, callback ) => {
             callback('Salah ni masukkan ape tu', undefined)
         }
         else {
-            callback(undefined, 'Suhu terkini adalah ' + body.main.temp  + ' dengan kelembapan ' + body.main.humidity)
+            callback(undefined, 'Suhu terkini adalah ' + body.main.temp  + ' dengan kelembapan ' + body.main.humidity + '. Suhu tertinggi adalah ' + body.main.temp_max + ' manakala suhu terendah adalah ' + body.main.temp_min + '.')
         }
     } )
 }
